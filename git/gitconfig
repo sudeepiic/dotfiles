@@ -1,0 +1,16 @@
+[core]
+    editor = vim
+    pager = delta
+    excludesfile = ~/.gitignore_global
+
+[delta]
+    navigate = true
+    side-by-side = true
+
+[alias]
+    st = status -sb
+    lg = log --graph --oneline --decorate --all
+    br = branch -vv
+    co = checkout
+    ci = commit
+    amend = commit --amend --no-edit

@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+git branch --merged main | grep -v "main" | xargs git branch -d

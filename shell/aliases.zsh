@@ -1,0 +1,5 @@
+alias gs="git st"
+alias gl="git lg"
+alias gb="git br"
+alias lg="lazygit"
+alias tg="tig"

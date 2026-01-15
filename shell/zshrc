@@ -1,0 +1,4 @@
+source ~/dotfiles/shell/exports.zsh
+source ~/dotfiles/shell/aliases.zsh
+
+export EDITOR=vim

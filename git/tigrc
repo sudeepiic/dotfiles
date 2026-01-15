@@ -1,0 +1,9 @@
+set show-graph = yes
+set graph-line-style = ascii
+set decorate = short
+set diff-options = --ignore-space-change
+set refresh-mode = manual
+
+bind main j next
+bind main k previous
+bind generic q quit

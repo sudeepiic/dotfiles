@@ -1,0 +1,6 @@
+brew "git"
+brew "lazygit"
+brew "tig"
+brew "fzf"
+brew "git-delta"
+brew "tmux"
