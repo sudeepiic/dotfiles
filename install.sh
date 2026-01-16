@@ -62,6 +62,10 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     if ! grep -q "starship init zsh" "$DOTFILES/shell/zshrc" | grep -v "^#"; then
         sed -i '' 's/^# eval "$(starship init zsh)"/eval "$(starship init zsh)"/' "$DOTFILES/shell/zshrc"
     fi
+
+    # Link starship config
+    mkdir -p ~/.config
+    ln -sf "$DOTFILES/tools/starship.toml" ~/.config/starship.toml
 fi
 
 echo ""

@@ -13,8 +13,9 @@ source "$DOTFILES/shell/lazy.zsh"
 eval "$(zoxide init zsh)"
 
 # Starship prompt (optional - uncomment if using starship)
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # Key bindings
 bindkey -v  # Vi mode
 bindkey '^R' history-incremental-search-pattern
+export PATH="$HOME/.local/bin:$PATH"
