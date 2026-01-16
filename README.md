@@ -108,6 +108,14 @@ nt    # npm test
 | `fzf` | `Ctrl+R` | Fuzzy history search |
 | `zoxide` | `z dir` | Smart dir jumping |
 
+### System Monitoring
+
+| Tool | Replaces | Purpose |
+|------|----------|---------|
+| `btop` | `top`/`htop` | Beautiful resource monitor |
+| `duf` | `df` | Disk usage in clean table |
+| `gping` | `ping` | Ping with latency graph |
+
 ## Tool Deep Dive
 
 ### `bat` → better `cat`
@@ -203,6 +211,39 @@ fnm ls-remote        # List available versions
 ```
 
 **Why:** Faster than nvm because it's written in Rust and doesn't hook into every shell startup. Works with `.nvmrc` files.
+
+---
+
+### `btop` → better `top`/`htop`
+
+```bash
+btop                # Launch interactive monitor
+# Keys: F10 = quit, F2 = settings, / = filter
+```
+
+**Why:** Beautiful, mouse-interactive interface showing CPU, memory, disk, and network usage. Process filtering and sorting built-in.
+
+---
+
+### `duf` → better `df`
+
+```bash
+duf                 # Disk usage in clean table
+duf --output used,size,usage  # Custom columns
+```
+
+**Why:** Colorful, easy-to-read disk usage table. Automatically sorts and shows all mounted filesystems.
+
+---
+
+### `gping` → better `ping`
+
+```bash
+gping google.com    # Ping with graph
+gping 8.8.8.8 --interval 0.5  # Faster updates
+```
+
+**Why:** Shows latency over time in a graph. Makes spotting network issues much easier than reading numbers.
 
 ---
 

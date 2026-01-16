@@ -20,5 +20,10 @@ brew "zoxide"   # smarter cd
 brew "node"
 brew "fnm"      # fast node version manager
 
+# System Monitoring
+brew "btop"     # better top/htop
+brew "duf"      # better df (disk usage)
+brew "gping"    # ping with graph
+
 # Optional: starship prompt (uncomment if using)
 # brew "starship"
