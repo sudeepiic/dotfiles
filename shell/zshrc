@@ -12,7 +12,7 @@ source "$DOTFILES/shell/lazy.zsh"
 # Zoxide (smarter cd)
 eval "$(zoxide init zsh)"
 
-# Starship prompt (optional - uncomment if using starship)
+# Starship prompt
 eval "$(starship init zsh)"
 
 # Key bindings
