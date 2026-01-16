@@ -59,7 +59,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     brew install starship
 
     # Enable starship in zshrc
-    if ! grep -q "starship init zsh" "$DOTFILES/shell/zshrc" | grep -v "^#"; then
+    if grep -q "^# eval \"\$(starship init zsh)\"" "$DOTFILES/shell/zshrc"; then
         sed -i '' 's/^# eval "$(starship init zsh)"/eval "$(starship init zsh)"/' "$DOTFILES/shell/zshrc"
     fi
 
