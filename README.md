@@ -93,19 +93,20 @@ ns    # npm start
 nt    # npm test
 ```
 
-### Better Defaults
+### Better Defaults (Aliased)
 
-| Tool | Replaces | Why |
-|------|----------|-----|
-| `bat` | `cat` | Syntax highlighting |
-| `fd` | `find` | Faster, simpler |
-| `rg` | `grep` | 10-100x faster |
-| `eza` | `ls` | Colors, git status |
-| `delta` | git diff | Side-by-side, highlighting |
-| `fzf` | Ctrl+R | Fuzzy search everything |
-| `zoxide` | `z` command | Smart directory jumping |
+| Original | Now Runs As | Use Original |
+|----------|-------------|--------------|
+| `cat` | `bat` | `\cat` |
+| `ls` | `eza` | `\ls` |
+| `grep` | `rg` | `\grep` |
 
-**Note:** `cat`, `ls`, and `grep` are aliased to use the better tools. Use `\cat`, `\ls`, or `\grep` to bypass.
+| Extra Tools | Command | Purpose |
+|-------------|---------|---------|
+| `fd` | `fd pattern` | Faster file search |
+| `delta` | `git diff` | Side-by-side diffs |
+| `fzf` | `Ctrl+R` | Fuzzy history search |
+| `zoxide` | `z dir` | Smart dir jumping |
 
 ## Tool Deep Dive
 
