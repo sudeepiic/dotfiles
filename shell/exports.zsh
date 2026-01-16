@@ -1,5 +1,6 @@
 # PATH
-export PATH="$HOME/dotfiles/bin:$PATH"
+# Note: Assumes dotfiles are symlinked at ~/dotfiles or adjust path below
+export PATH="$HOME/.local/bin:$PATH"
 
 # History
 export HISTSIZE=10000
@@ -29,9 +30,5 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git --exclu
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --color=dark'
 
-# Ripgrep
-export RIPGREP_CONFIG_PATH="$HOME/dotfiles/tools/ripgrep.conf"
-
 # Bat (better cat)
-export BAT_CONFIG_PATH="$HOME/dotfiles/tools/bat.conf"
 export BAT_THEME="TwoDark"

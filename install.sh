@@ -34,6 +34,16 @@ ln -sf "$DOTFILES/shell/zshrc" ~/.zshrc
 # Vim
 ln -sf "$DOTFILES/vim/.vimrc" ~/.vimrc
 
+# Ghostty terminal
+echo ""
+read -p "👻 Link Ghostty terminal config? [y/N] " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    mkdir -p ~/.config/ghostty
+    ln -sf "$DOTFILES/config/ghostty/config" ~/.config/ghostty/config
+    echo "  Ghostty config linked. Restart Ghostty to apply."
+fi
+
 # SSH config (ask first)
 if [ ! -f ~/.ssh/config ]; then
     echo ""
